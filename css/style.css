@@ -1,0 +1,338 @@
+/**
+* fileName: style.css
+*
+* fileRemark：层叠样式表
+*
+* author: changjiu Huang
+*
+* email: 99795427@qq.com
+*
+* create log 2017年5月20日12:40:00
+*
+* update log 2017年5月20日12:50:00
+*
+**/
+
+
+
+/* 基本样式 */
+body {
+  width: 2048px;
+  padding: 0;
+  margin: 0;
+  font: 11px/1.5em 黑体, Arial, Verdana, sans-serif;
+}
+
+a:link, a:visited {
+  color: #A52A2A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* 文档左边的面部 */
+div.extra2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 265px;
+  height: 600px;
+  background: url("../images/bg_face.jpg") no-repeat left bottom;
+  z-index: 2;
+}
+
+
+/* 为了实现左边模糊效果引入的空白图片 */
+div.extra3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 225px;
+  height: 100px;
+  background: url("../images/bg_white.png"); 
+  z-index: 1;  
+}
+
+
+/* header部分 */
+header {
+  position: relative;
+  left: 220px;
+  width: 1828px;
+}
+
+
+header h1 {
+  width: 493px;
+  height: 83px;
+  margin: 20px 0 0;
+  background: url("../images/csszengarden.jpg") no-repeat right; 
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+header h2 {
+  width: 1826px;
+  height: 27px;
+  margin-top: -10px;
+  background: url("../images/thebeautyofcssdesign.jpg") no-repeat right bottom;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+/* summary 部分 */
+div.summary {
+  position: absolute;
+  left: 228px;
+  top: 98px;
+  width: 1300px;
+  letter-spacing: 0.1em;
+  color: #A5A3B5;
+  background: transparent;
+}
+
+
+div.summary p:last-child,
+div.summary p:first-child {
+  display: inline;
+  margin: 0;
+}
+
+/* h1 与 h2 之间的线条 */
+div.extra1 {
+  position: absolute;
+  left: 225px;
+  top: 90px;
+  width: 1823px;
+  height: 1px;
+  background: #A5A3B5;
+}
+
+
+/* preamble 部分 */
+.preamble {
+  position: absolute;
+  left: 375px;
+  top: 160px;
+  width: 200px;
+  text-align: justify;
+}
+
+
+.preamble h3 {
+  width: 200px;
+  height: 25px;
+  margin: 0 0 0 0.5em;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url("../images/theroad.jpg");
+}
+
+
+.preamble p {
+  maring: 0 0.5em 0.5em;
+}
+
+
+/* supporting 部分 */
+/*-----------共性-------------- */
+div.explanation , div.participation,
+div.benefits, div.requirements {
+  position: absolute;
+  top: 160px;
+  width: 200px;
+  text-align: justify;
+}
+
+/*-----------特性---------------*/
+div.explanation {
+  left: 625px;
+}
+
+div.participation {
+  left: 875px;
+}
+
+div.benefits {
+  left: 1125px;
+}
+
+div.requirements {
+  width: 400px;
+  left: 1375px;
+}
+
+
+/* supporting 下 h3的共性 */
+div.explanation h3 , div.participation h3,
+div.benefits h3, div.requirements h3 {
+  width: 200px;
+  height: 25px;
+  margin: 0 0 0.5em;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* supporting 下 h3的特性 */
+div.explanation h3 {
+  background: transparent url("../images/sowhatisthisabout.jpg") no-repeat left bottom;
+}
+
+div.participation h3 {
+  background: transparent url("../images/participation.jpg") no-repeat left bottom;
+}
+
+div.benefits h3 {
+  background: transparent url("../images/benefits.jpg") no-repeat left bottom;
+}
+
+/* 独有的特性 */
+div.requirements h3 {
+  width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent url("../images/requirements.jpg") no-repeat left bottom;
+}
+
+
+div.explanation p , div.participation p,
+div.benefits p, div.requirements p {
+  margin: 0 0.5em 0.5em;
+}
+
+
+/* sidebar 部分 */
+.sidebar {
+  position: absolute;
+  left: 1828px;
+  top: 160px;
+  width: 220px;
+  background: url("../images/bg_linklist.jpg") repeat-y;
+}
+
+
+.design-selection li a:link,
+.design-selection li a:visited {
+  display: block;
+  padding-left: 26px;
+  margin-left: -10px;
+  border-top: 1px solid #C6C6D3;
+  color: #8B879E;
+  background: url("../images/linklistlink.jpg") no-repeat;
+}
+
+
+.design-selection li a.designer-name:link,
+.design-selection li a.designer-name:visited {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: #A52A2A;
+}
+
+
+.sidebar ul {
+  padding: 0;
+  margin: 0 0 0 25px;
+  list-style: none;
+}
+
+
+.sidebar ul li {
+  padding-left: 10px;
+}
+
+
+.design-selection  h3{
+  float: left;
+  width: 25px;
+  height: 200px;
+  margin-top: 0;
+  background: url("../images/selectadesign.jpg") no-repeat;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+div .design-archives,div .zen-resources {
+  clear: left;
+  border-top: 10px solid #D9D6E7;
+  margin-top: 0;
+  
+}
+
+
+/* sidebar 下 h3的共性 */
+div .design-archives h3,div .zen-resources h3 {
+  float: left;
+  width: 25px;
+  height: 200px;
+  margin-top: 0;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* sidebar 下 h3的特性 */
+div .design-archives h3 {
+  background: transparent url("../images/archives.jpg") no-repeat left top;
+}
+
+div .zen-resources h3 {
+  background: transparent url("../images/resources.jpg") no-repeat left top;
+}
+
+
+/* footer 部分 */
+footer {
+  position: absolute;
+  left: 1828px;
+  top: 3px;
+  width: 220px;
+  height: 20px;
+  text-align: center;
+  word-spacing: 0.1em;
+  overflow: hidden;
+}
+
+
+footer a:link, footer a:visited {
+  color: #B2AFC0;
+  background: transparent;
+}
+
+
+/* 遮罩层 */
+.extra4 {
+  position: absolute;
+  left: 1828px;
+  top: 20px;
+  width: 214px;
+  height: 65px;
+  background: #d9d6e7 url("../images/transition.jpg");
+}
+
+
+.extra5 {
+  position: absolute;
+  left: 1828px;
+  top: 0;
+  width: 220px;
+  height: 902px;
+  background: #d9d6e7 url("../images/bg_body.jpg");
+  z-index: -1;
+}
+
